@@ -1,0 +1,26 @@
+extends ../base.pug 
+
+block variables
+  - var template = "model"
+
+block content 
+  main.model
+    .model__wrapper 
+
+    section.model__about 
+      .model__about__wrapper 
+        h5.model__inro__heading Ayoola
+        .model__about__body 
+          a.model__about__portfolio Portfolio • Instagram ↗
+          .model__about__stats 
+            p.model__about__stat Height: 5’9
+            p.model__about__stat Bust: 32
+            p.model__about__stat Waist: 24
+            p.model__about__stat Hips: 34
+            p.model__about__stat Show: 40
+            p.model__about__stat Hair: Black
+            p.model__about__stat Eyes: Brown
+
+    section.model__images 
+      .model__images__wrapper 
+        figure.model__images__media
