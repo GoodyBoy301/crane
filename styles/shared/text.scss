@@ -17,6 +17,12 @@
 }
 
 %text-m {
+  font-family: $font-PP;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
   @include media("<phone") {
     line-height: 1.2;
     font-size: 1.4rem;
@@ -55,9 +61,15 @@
   }
 }
 
-%title-l {
-  font-size: 2rem;
-  line-height: 1.2;
+%h2 {
+  font-family: $font-Display;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 100%;  
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
   @include media("<phone") {
     font-size: clamp(0rem, 1.1rem, 15px);
   }

@@ -2,5 +2,25 @@
   @extend %body;
   @extend %fixed;
   top: 0;
-  display: flex;
+  width: (144rem - 8rem);
 }
+
+.header__wrapper {}
+
+.header__navigation {}
+
+.header__navigation__row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3.2rem;
+}
+
+.header__navigation__item {
+  @extend %text-m;
+
+  &:first-of-type {
+    margin-right: auto;
+  }
+}
+
+.header__home__link {}
