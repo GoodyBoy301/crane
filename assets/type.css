@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'),
+        url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal Variable';
+    src: local('PP Neue Montreal Variable'), local('PPNeueMontreal-Variable'),
+        url('fonts/PPNeueMontreal-Variable.woff2') format('woff2'),
+        url('fonts/PPNeueMontreal-Variable.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

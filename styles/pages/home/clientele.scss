@@ -1,0 +1,27 @@
+.home__clientele {
+  margin-top: 7.2rem;
+}
+
+.home__clientele__wrapper {}
+
+.home__clientele__intro {
+  @extend %text-xl;
+  width: 50.1rem;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home__clientele__brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2.4rem;
+  margin-top: 1.6rem
+}
+
+.home__clientele__brand {}
+
+.home___client__name {
+  @extend %h4;
+}
