@@ -1,6 +1,8 @@
   .home{
     @extend %body;
     position: absolute;
+    width: calc(100vw - 8rem);
+    overflow-x: hidden;
     
   }.home__wrapper{
     
