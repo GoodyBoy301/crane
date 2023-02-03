@@ -10,10 +10,14 @@
 
 @import "./base/base";
 
-@import "./partials/footer/footer";
+@import "./partials/footer/contact";
+@import "./partials/footer/inquiry";
+@import "./partials/footer/outro";
 @import "./partials/header/header";
 @import "./partials/preloader/preloader";
 
 @import "./pages/home/hero";
 @import "./pages/home/slides";
 @import "./pages/home/clientele";
+@import "./pages/home/about";
+@import "./pages/home/carousel";

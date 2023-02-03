@@ -1,0 +1,37 @@
+.home__about {
+  margin-top: 12rem;
+
+}
+
+.home__about__wrapper {
+  display: flex;
+  gap:48.4rem;
+}
+
+.home__about__medias {}
+
+.home__about__media {
+  width: 42.2rem;
+  height: 74.5rem;
+}
+
+.home__about__details {}
+
+.home__about__heading {
+  @extend %h5
+}
+
+.home__about__body {
+  @extend %text-m;
+  margin-top: 1.6rem;
+}
+
+.home__about__cta {
+  @extend %text-m;
+  margin-top: 2.4rem;
+  color: #ffffff;
+  font-weight: 375;
+  border-bottom: 0.1rem solid #ffffff;
+  padding-bottom: 0.2rem;
+  width: 10.3rem;
+}

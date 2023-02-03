@@ -5,6 +5,7 @@
 %text-0 {
   visibility: hidden;
   font-size: 0;
+
   &:before,
   &:after {
     visibility: visible;
@@ -23,10 +24,11 @@
   font-size: 1.6rem;
   line-height: 150%;
   letter-spacing: 0.02em;
-  @include media("<phone") {
-    line-height: 1.2;
-    font-size: 1.4rem;
-  }
+
+  // @include media("<phone") {
+  //   line-height: 1.2;
+  //   font-size: 1.4rem;
+  // }
 }
 
 %text-l {
@@ -37,49 +39,82 @@
 }
 
 %text-xl {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  @include media("<phone") {
-    font-size: 1rem;
-  }
-}
-
-%title-s {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  font-weight: 500;
-  @include media("<phone") {
-    font-size: 1.1rem;
-  }
-}
-
-%title-m {
+  font-family: $font-PP;
+  font-style: normal;
+  font-weight: 450;
   font-size: 2rem;
-  line-height: 1.2;
-  @include media("<phone") {
-    font-size: clamp(0rem, 1.4rem, 15px);
-  }
+  line-height: 150%;
+  letter-spacing: 0.02em;
+
+  // @include media("<phone") {
+  //   font-size: 1rem;
+  // }
+}
+
+%h5 {
+  font-family: $font-PP;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 4rem;
+  line-height: 110%;
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+%h4 {
+  font-family: $font-Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8rem;
+  line-height: 100%;
+  /* identical to box height, or 80px */
+
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+%h3 {
+  font-family: $font-Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6.4rem;
+  line-height: 110%;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  // @include media("<phone") {
+  //   font-size: clamp(0rem, 1.4rem, 15px);
+  // }
 }
 
 %h2 {
   font-family: $font-Display;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12rem;
-    line-height: 100%;  
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-  @include media("<phone") {
-    font-size: clamp(0rem, 1.1rem, 15px);
-  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  // @include media("<phone") {
+  //   font-size: clamp(0rem, 1.1rem, 15px);
+  // }
 }
 
-%title-xl{
-  font-size: 3rem;
-  line-height: 1.5;
-  @include media("<phone") {
-    font-size: clamp(0rem, 0.9rem, 15px);
-    line-height: 1.2;
-  }
+%h1 {
+  font-family: $font-PP;
+    font-style: normal;
+    font-weight: 530;
+    font-variation-settings: "wght" 530;
+    font-size: 16.7rem;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+  // @include media("<phone") {
+  //   font-size: clamp(0rem, 0.9rem, 15px);
+  //   line-height: 1.2;
+  // }
 }
