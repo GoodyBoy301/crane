@@ -1,0 +1,26 @@
+.footer__outro {
+  margin-top: 25.5rem;
+}
+
+.footer__outro__wrapper {
+  position: relative;
+}
+
+.footer__outro__details {
+  display: flex;
+  gap: 7.3rem;
+  justify-content: space-between;
+  margin-top:0.4rem;
+  right: 2.1rem;
+  position: absolute;
+  left: 68rem;
+}
+
+.footer__outro__detail {
+  @extend %text-m;
+  line-height: 100%
+}
+
+.footer__outro__heading {
+  @extend %h1;
+}

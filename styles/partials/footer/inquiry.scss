@@ -1,0 +1,28 @@
+.footer__inquiry__wrapper {
+  margin-top: 12.3rem;
+  margin-left: 68rem;
+}
+
+.footer__inquiry__mail {
+  @extend %text-m;
+}
+
+.footer__inquiry__intro {}
+
+.footer__inquiry__email {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-decoration-color: #567362;
+}
+
+.footer__inquiry__socials {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.footer__inquiry__social {
+  @extend %text-m;
+}
+
+
