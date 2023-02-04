@@ -14,6 +14,18 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/models", (req, res) => {
+  res.render("pages/models", {
+    preloadables,
+  });
+});
+
+app.get("/model:id", (req, res) => {
+  res.render("pages/model", {
+    preloadables,
+  });
+});
+
 app.get("/:invalid", (req, res) => {
   res.redirect("/");
 });
