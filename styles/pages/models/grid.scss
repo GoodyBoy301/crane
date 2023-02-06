@@ -1,0 +1,35 @@
+.models__about.grid {
+  margin-top: 2.4rem;
+
+
+  .models__about__bios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3.2rem;
+
+  }
+
+  .models__about__bio {}
+
+  .models__about__media {
+    width: 31.6rem;
+    height: 40rem;
+  }
+
+  .models__about__name {
+    @extend %text-l;
+    margin-top: 1.7rem;
+    display: inline-block;
+  }
+
+  .models__about__country {
+    @extend %text-s;
+    display: inline-block;
+    // margin-left: 0.8rem;
+    // margin-left: 1.4rem;
+    margin-left: 1.1rem;
+
+  }
+
+
+}

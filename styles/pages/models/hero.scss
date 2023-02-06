@@ -1,0 +1,109 @@
+  .models {
+    @extend %body;
+    position: absolute;
+    width: calc(100vw - 8rem);
+    overflow-x: hidden;
+
+  }
+
+  .models__wrapper {
+    margin-top: 4rem
+  }
+
+  .models__intro {}
+
+  .models__intro__wrapper {}
+
+  .models__inro__heading {
+    @extend %h5;
+    text-transform: unset;
+  }
+
+  .models__intro__body {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .models__intro__text {
+    @extend %text-m;
+    // width: 45.8rem;
+    width: 45rem;
+  }
+
+  .models__intro__displays {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 2rem;
+    gap: 1.6rem;
+    width: 17.5rem;
+    gap: 1.6rem;
+    height: 4rem;
+    border: 0.1rem solid #FFFFFF;
+    border-radius: 20rem;
+    cursor: pointer;
+  }
+
+  .models__intro__display {
+    @extend %text-m;
+
+    &:nth-of-type(1) {
+      text-align: left;
+
+      &.active {
+        flex: 1;
+
+        &::before {
+          content: "List";
+          width: 8.25rem;
+          left: -25%;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      text-align: center;
+
+      &.active {
+        flex: 1;
+
+        &::before {
+          content: "Grid";
+          width: 8rem;
+          left: -7.75%;
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      text-align: right;
+
+      &.active {
+        flex: 1;
+
+        &::before {
+          content: "Editorial";
+          width: 11.2rem;
+          right: -19.75%;
+        }
+      }
+
+    }
+
+    &.active {
+      position: relative;
+      color: $color-black;
+
+      &::before {
+        position: absolute;
+        background: #ffffff;
+        height: 4rem;
+        bottom: -0.79rem;
+        border-radius: 10rem;
+        display: grid;
+        place-content: center;
+      }
+    }
+
+  }
