@@ -25,6 +25,7 @@ export default class Page {
     this.createMesh?.call(this);
   }
   predestroy() {
+    return;
     if (!Canvas) return;
     Canvas.navigate = () => {
       this.removeEventListeners && this.removeEventListeners();

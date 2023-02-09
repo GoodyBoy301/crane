@@ -6,7 +6,7 @@ import Canvas from "components/Canvas";
 export default class Framework {
   constructor() {
     this.reCalculate({ scroll: {} });
-    this.createCanvas();
+    // this.createCanvas();
     // this.createPreloader();
     this.createContent();
     this.addEventListeners();

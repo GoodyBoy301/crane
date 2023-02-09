@@ -1,4 +1,5 @@
 import Home from "pages/Home";
+import Models from "pages/Models";
 import Framework from "classes/Framework";
 
 class App extends Framework {
@@ -14,6 +15,7 @@ class App extends Framework {
   createPages() {
     this.pages = {
       home: new Home(),
+      models: new Models(),
     };
     this.page = this.pages[this.template];
     this.createRouter();
