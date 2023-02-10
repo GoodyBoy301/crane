@@ -20,7 +20,7 @@ app.get("/models", (req, res) => {
   });
 });
 
-app.get("/model:id", (req, res) => {
+app.get("/models/model:id", (req, res) => {
   res.render("pages/model", {
     preloadables,
   });

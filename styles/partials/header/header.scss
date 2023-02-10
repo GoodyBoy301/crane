@@ -3,6 +3,7 @@
   @extend %fixed;
   top: 0;
   width: (144rem - 8rem);
+  height: unset;
 }
 
 .header__wrapper {}
