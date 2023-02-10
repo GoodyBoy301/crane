@@ -1,0 +1,41 @@
+    .model {
+      @extend %body;
+      position: absolute;
+      width: calc(100vw - 8rem);
+      overflow-x: hidden;
+
+    }
+
+    .model__wrapper {
+      margin-top: 4rem
+    }
+
+    .model__about {}
+
+    .model__about__wrapper {}
+
+    .model__inro__heading {
+      @extend %h5;
+      font-weight: 400;
+      text-transform: unset;
+    }
+
+    .model__about__body {
+      margin-top: 1.6rem;
+      display: grid;
+      gap: 2.4rem;
+    }
+
+    .model__about__portfolio {
+      @extend %text-m;
+    }
+
+    .model__about__stats {
+      @extend %text-m;
+    }
+
+    .model__images {}
+
+    .model__images__wrapper {}
+
+    .model__images__media {}
