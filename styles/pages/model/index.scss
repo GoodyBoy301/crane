@@ -1,41 +1,70 @@
-    .model {
-      @extend %body;
-      position: absolute;
-      width: calc(100vw - 8rem);
-      overflow-x: hidden;
+.model {
+  @extend %body;
+  position: absolute;
+  width: calc(100vw - 8rem);
+  overflow-x: hidden;
 
-    }
+}
 
-    .model__wrapper {
-      margin-top: 4rem
-    }
+.model__wrapper {
+  margin-top: 4rem
+}
 
-    .model__about {}
+.model__selected {}
 
-    .model__about__wrapper {}
+.model__selected__wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
 
-    .model__inro__heading {
-      @extend %h5;
-      font-weight: 400;
-      text-transform: unset;
-    }
+.model__selected__media {
+  width: 59.4rem;
+  height: 75.5rem;
+  border-radius: 3.2rem;
+}
 
-    .model__about__body {
-      margin-top: 1.6rem;
-      display: grid;
-      gap: 2.4rem;
-    }
+.model__selected__icon{
+  width: 4.028rem;
+  height: 4.028rem;
+}
 
-    .model__about__portfolio {
-      @extend %text-m;
-    }
+.model__about {}
 
-    .model__about__stats {
-      @extend %text-m;
-    }
+.model__about__wrapper {}
 
-    .model__images {}
+.model__inro__heading {
+  @extend %h5;
+  font-weight: 400;
+  text-transform: unset;
+}
 
-    .model__images__wrapper {}
+.model__about__body {
+  margin-top: 1.6rem;
+  display: grid;
+  gap: 2.4rem;
+}
 
-    .model__images__media {}
+.model__about__portfolio {
+  @extend %text-m;
+}
+
+.model__about__stats {
+  @extend %text-m;
+}
+
+.model__images {
+  margin-top: 4rem;
+}
+
+.model__images__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.model__images__media {
+  width: 43.2rem;
+  height: 65.7rem;
+}

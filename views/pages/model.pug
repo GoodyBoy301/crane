@@ -7,9 +7,17 @@ block content
   main.model
     .model__wrapper 
 
+    section.model__selected
+      .model__selected__wrapper
+        figure.model__selected__media
+        svg.model__selected__icon(width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg")
+          rect(width="40.2843" height="40.2843" rx="20" fill="#FAF9FF")
+          path(d="M13.071 13.071L27.2132 27.2132" stroke="#010300" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+          path(d="M13.071 27.2132L27.2131 13.071" stroke="#010300" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+
     section.model__about 
       .model__about__wrapper 
-        h5.model__inro__heading Ayoola
+        h5.model__inro__heading #{model.name}
         .model__about__body 
           a.model__about__portfolio Portfolio • Instagram ↗
           .model__about__stats 
@@ -22,5 +30,10 @@ block content
             p.model__about__stat Eyes: Brown
 
     section.model__images 
-      .model__images__wrapper 
-        figure.model__images__media
+      .model__images__wrapper
+        each image in model.images
+          figure.model__images__media
+            img(src=image, alt="", )
+
+    include ../partials/footer
+
