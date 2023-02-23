@@ -1,41 +1,47 @@
-const express = require("express");
-const path = require("path");
-const preloadables = require("./preloadables");
-const app = express();
-const port = process.env.port || 22023;
+const express = require("express")
+const path = require("path")
+const preloadables = require("./preloadables")
+const models = require("./models")
+const app = express()
+const port = process.env.port || 22023
 
-app.use(express.static(path.join(__dirname, "public")));
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "pug");
+app.use(express.static(path.join(__dirname, "public")))
+app.set("views", path.join(__dirname, "views"))
+app.set("view engine", "pug")
 
 app.get("/", (req, res) => {
   res.render("pages/home", {
     preloadables,
-  });
-});
+  })
+})
 
 app.get("/models", (req, res) => {
   res.render("pages/models", {
     preloadables,
-  });
-});
+  })
+})
 
-app.get("/models/model:id", (req, res) => {
-  res.render("pages/model", {
-    preloadables,
-  });
-});
+app.get("/models/:modelname", (req, res) => {
+  const { modelname } = req.params
+  const model = models[modelname]
+  if (!model) {
+    res.redirect("/models")
+  } else {
+    model.images = preloadables.models[modelname]
+    res.render("pages/model", {
+      preloadables,
+      model,
+    })
+  }
+})
 
 app.get("/:invalid", (req, res) => {
-  res.redirect("/");
-});
+  res.redirect("/")
+})
 
 app.listen(port, () => {
   //Stylishly log hostname and port
-  console.log(
-    `\x1b[32m Server listening at\x1b[0m`,
-    `\x1b[4mhttp://localhost:${port}\x1b[0m`
-  );
-});
+  console.log(`\x1b[32m Server listening at\x1b[0m`, `\x1b[4mhttp://localhost:${port}\x1b[0m`)
+})
 
-module.exports = app;
+module.exports = app
